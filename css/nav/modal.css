@@ -1,0 +1,189 @@
+
+
+.modal {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    border-radius: 10px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog { max-width: none; }
+}
+
+.modal-dialog {
+    width: 98%;
+    height: 92%;
+    padding: 0;
+    border-radius: 10px;
+    
+
+    /*width: 98% !important;
+    height: 100% !important;
+    min-width: 98% !important;
+    min-height: 100% !important;
+    max-width: 98% !important;
+    max-height: 100% !important;
+    padding: 0 !important;*/
+
+
+    /*max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;*/
+}
+
+.modal-content {
+    /*height: 99%;*/
+
+    height: 99% !important;
+    min-height: 99% !important;
+    max-height: 100% !important;
+
+}
+
+/*modal close button*/
+.close-button {
+    position: relative;
+    padding: 0;
+    margin: 0px;
+    margin-left: 95%;
+    padding-top: .2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    background-color:#EC8F4F;
+    color: white;
+    opacity: 3px;
+    box-shadow: none;
+    text-decoration: none;
+    width: 5%;
+    border-radius: 20px;
+
+}
+
+.close-text {
+    color: white;
+    opacity: 3;
+    font-size: 2em;
+}
+
+.close-button:hover {
+    transform: rotate(360);
+}
+.modal-header {
+    border: 0;
+    color: white;
+    background-color: #EC8F4F;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    justify-content: center;
+    padding-bottom: 2px;
+    margin: none;
+}
+    /*#4f5d81;*/
+
+.modal-header .card-element-title {
+    color: white;
+    text-decoration-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+    margin:0;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.modal-body {
+   background: #F3904F;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to top, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to top, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
+
+}
+
+.card-container {
+    padding: 10px;
+    min-width: 100px;
+    width: 25%;
+}
+
+.card-container:hover {
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 5px;
+}
+
+.card-content div .card-body .btn {
+    position: absolute;
+    bottom: 40px;
+}
+
+/*animation for modal cards*/
+#card-1 {
+    animation-delay: .2s;
+    animation-duration: 1s;
+} 
+
+#card-2 {
+    animation-delay: .4s;
+    animation-duration: 1s;
+}
+
+#card-3 {
+    animation-delay: .6s;
+    animation-duration: 1s;
+}
+
+#card-4 {
+    animation-delay: .8s;
+    animation-duration: 1s;
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'Kodchasan';
+    font-weight: bolder;
+    color:white;
+    font-size: 30px;
+}
+
+/*modal paragraphs*/
+h5 p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-img-top {
+    height: auto;
+    max-width: 100%;
+    background-size: contain;
+    margin-bottom: .10%;
+}
+    /*padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+@media  only screen and (max-width: 700px){
+    .card-img-top {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+    .card-img-top {
+    width: 100%;
+  }
+}*/

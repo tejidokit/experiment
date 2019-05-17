@@ -1,0 +1,131 @@
+
+@import "modal.css";
+
+.nav {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: .5rem 1rem;
+    font-size: 20px;
+}
+
+
+/*BIG NAVIGATION BUTTON*/
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.slow {
+    animation-delay: 4 s;
+    animation-iteration-count: 3;
+    animation-duration: 1s;
+}
+/*.wobble {
+    animation:bouncy 5s infinite linear;
+    position: relative;
+}
+@keyframes wobble {
+    0%{ top:0em }
+    40%{ top:0em }
+    43%{ top:-0.9em }
+    46%{ top:0em }
+    48%{ top:-0.4em }
+    50%{ top:0em }
+    100%{ top:0em }
+}*/
+
+.nav-item .home {
+    margin-right: .2rem;
+    
+}
+
+.nav-item .services {
+    margin-right: 1rem;
+}
+
+.nav-link {
+    margin-top: 10px;
+    cursor: pointer;    
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background: none;
+    border: 0;
+    color: white;
+}
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link:before {
+    z-index: 1;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent
+}
+
+.nav-link:hover:before {
+    transition: .1s transform ease-out, .1s height ease-out .1s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: white;
+}
+
+.nav-link:after {
+    cursor: pointer;
+    z-index: 1;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent
+}
+
+.nav-link:hover:after {
+    transition: .1s transform ease-out .2s , .1s height ease-out .3s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: white;
+}
+
+.nav-link span {
+    background: #FFF;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.nav-link:hover span {
+    width: 99%;
+    transition: all .1s .3s ease-in-out;
+}
+
+.nav-link:hover {
+    font-weight: 900;
+}
+
+
