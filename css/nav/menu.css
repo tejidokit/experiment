@@ -8,7 +8,7 @@
           flex-direction: column;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(#3B4371), to(#F3904F));
@@ -20,7 +20,7 @@
 }
 
 .services-menu .menu-header {
-  height: 10%;
+  height: 8%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,6 +28,7 @@
 }
 
 .services-menu .menu-header .menu-title {
+  font-size: 1.5em;
   margin: auto;
 }
 
@@ -38,12 +39,28 @@
   background: transparent;
   border: 0;
   color: white;
-  height: 10%;
+  height: 8%;
   width: 8%;
-  font-size: 1.2em;
+  font-size: 1.5rem;
 }
 
 .services-menu .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-menu .menu-container .menu-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,18 +68,24 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  left: 0;
-  width: 100%;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
-.services-menu .menu-container .menu-item {
-  width: 25%;
-  padding-left: 10px;
-  height: 100%;
+.services-menu .menu-container .menu-row .menu-item {
+  width: 100%;
+  padding-left: 20px;
+  min-height: 300px;
 }
 
-.services-menu .menu-container .menu-item .img-link img {
+.services-menu .menu-container .menu-row .menu-item .img-link img {
   width: 100%;
+}
+
+.services-menu .menu-container .menu-row .menu-item .menu-item-title {
+  text-align: center;
+}
+
+.services-menu .menu-container .menu-row .menu-item .menu-item-description {
+  text-align: center;
 }
 /*# sourceMappingURL=menu.css.map */

@@ -2,6 +2,11 @@
 @import "nav/nav.css";
 @import "nav/menu.css";
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     padding: 50px;
 }
